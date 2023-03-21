@@ -82,6 +82,7 @@ export async function Register(req, res) {
 
     if (!fs.existsSync(`files/${user._id}`)) {
       fs.mkdirSync(`files/${user._id}`);
+      
     }
 
     const token = jwt.sign({ userId: user.id }, process.env.JWT_SECRET, {

@@ -22,7 +22,6 @@ export default function Dashboard() {
     }
   }, [isAuth, navigate]);
 
-  console.log(width);
 
   return (
     <>

@@ -34,8 +34,7 @@ export default function DiskHeader({ items }) {
 
   React.useEffect(() => {
     dispatch(getdisk({ sort }));
-    console.log({ sort });
-  }, [sort]);
+  }, [sort, dispatch]);
 
   const handleFileUpload = (e) => {
     const file = e.target.files[0];

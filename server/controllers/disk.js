@@ -56,7 +56,7 @@ export async function CreateDir(req, res) {
       }
     }
   } catch (err) {
-    res.status(500).json({ message: "Ошибка сервера, попробуйте позже" });
+    res.status(500).json({ message: err.message });
   }
 }
 
